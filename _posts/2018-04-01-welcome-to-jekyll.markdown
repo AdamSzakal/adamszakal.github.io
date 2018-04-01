@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Hey Jekyll, tell me how you doin'"
 date:   2018-04-01 11:05:48 +0200
 categories: jekyll update
