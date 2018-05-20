@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<div class="home">
+    <ul class="post-list">
+	{% for post in site.posts %}
+	    {% include list-item_static.html %}
+	{% endfor %}
+    </ul>
+
+</div>
