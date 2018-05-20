@@ -32,6 +32,7 @@ section {
 .text-container {
     padding-bottom: 4rem;
     padding-left: 8rem;
+    max-width: 70rem;
 }
 
 .section-inner {
@@ -39,8 +40,12 @@ section {
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    min-height: calc(100vh - 10rem);
+    align-items: center;
+    min-height: 100vh;
+}
+
+.single-column {
+    flex-direction: column;
 }
 
 #introduction {
