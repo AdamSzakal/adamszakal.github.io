@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      {% include header.html %}
+      <div class="separator"></div>
+      {{ content }}
+    </main>
+    <aside id="green-vibe"></aside>
+    <footer class="site-footer">
+      <div class="footer-gradient"></div>
+      <p class="footer-name">Adam Szakal</p>
+      <p class="footer-date">© 2023</p>
+    </footer>
+    <script>
+      let footerDate = document.querySelector(".footer-date");
+      let currentDate = new Date();
+      footerDate.innerHTML = `© ${
+        currentDate.getFullYear()
+      }`;
+    </script>
+  </body>
+</html>

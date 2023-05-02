@@ -1,0 +1,5 @@
+# these will be available at site.[collection name]
+# for example, at site.cv
+collections:
+  work:
+  education:
