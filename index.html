@@ -23,8 +23,10 @@ title: Home
   {% for entry in site.education %}
     <section class="listing">
       <p class="years">{{ entry.years }}</p>
-      <h4>{{ entry.name }}</h4>
-      <p>{{ entry.position }}</p>
+      <a href="{{ entry.URL }}">
+        <h4>{{ entry.program }}</h4>
+      </a>
+      <p>{{ entry.institute }}</p>
       <p class="entry-content">{{ entry.content | markdownify }}</p>
       <!-- 👆 Run markdownify filter to convert markdown to HTML -->
     </section>
