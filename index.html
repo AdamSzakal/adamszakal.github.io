@@ -2,33 +2,5 @@
 layout: default
 title: Home
 ---
-<div class="separator"></div>
-<article>
-  <h3 class="resume-headline">Professional experience</h3>
-  {% for entry in site.work %}
-    <section class="listing">
-      <p class="years">{{ entry.years }}</p>
-      <a href="{{ entry.URL }}">
-        <h4>{{ entry.name }}</h4>
-      </a>
-      <p>{{ entry.position }}</p>
-      <p class="entry-content">{{ entry.content | markdownify }}</p>
-      <!-- 👆 Run markdownify filter to convert markdown to HTML -->
-    </section>
-  {% endfor %}
-</article>
-<div class="separator"></div>
-<article>
-  <h3 class="resume-headline">Education</h3>
-  {% for entry in site.education %}
-    <section class="listing">
-      <p class="years">{{ entry.years }}</p>
-      <a href="{{ entry.URL }}">
-        <h4>{{ entry.program }}</h4>
-      </a>
-      <p>{{ entry.institute }}</p>
-      <p class="entry-content">{{ entry.content | markdownify }}</p>
-      <!-- 👆 Run markdownify filter to convert markdown to HTML -->
-    </section>
-  {% endfor %}
-</article>
+{% include work-listing.html %}
+{% include education-listing.html %}

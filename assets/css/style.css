@@ -9,7 +9,7 @@
     color: var(--fg);
     background-color: var(--bg);
 
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: "Iosevka", system-ui, Helvetica, Arial, sans-serif;
     font-size: 14px;
     line-height: 1.4;
     font-weight: 400;
@@ -64,6 +64,11 @@ nav {
     display: flex;
     gap: 8px;
 }
+
+strong {
+    font-weight: 900;
+}
+
 a {
     text-decoration: dotted underline;
     color: var(--fg);
@@ -85,6 +90,7 @@ section {
 }
 
 .title {
+    font-weight: 100;
     font-size: 136px;
     margin-top: 7rem;
     margin-bottom: 2rem;
